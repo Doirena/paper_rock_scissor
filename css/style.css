@@ -14,8 +14,8 @@ word-break: break-all;
 .container{
     display: inline-block;
     padding: 20px;
-    width: 100%;
-    height: 100vh;
+    min-width: 100%;
+    min-height: 100vh;
     background-color: aquamarine;
 }
 
@@ -26,6 +26,7 @@ word-break: break-all;
         /* float: left; */
         width: 100%;
         text-align: center;
+        margin: 20px 0;
 
     }
         p{
@@ -43,16 +44,22 @@ word-break: break-all;
             box-sizing: border-box;
             width: 100px;
             height: 100px;
+            margin: 10px 0;
         }
 
 
 /* Vieno rezultato laimetojas */
     .win{
         display: inline-block;
+        width: 100%;
+        text-align: center;
+        background-color: bisque;
 
     }
-        h2{
+        h4{
             display: inline-block;
+            line-height: 20px;
+
 
         }
 
@@ -62,6 +69,7 @@ word-break: break-all;
         display: inline-block;
         width: 100%;
         text-align: center;
+        margin: 20px 0;
 
     }
         p{
@@ -78,6 +86,7 @@ word-break: break-all;
             box-sizing: border-box;
             width: 100px;
             height: 100px;
+            margin: 10px 0;
         }
         
 
@@ -86,19 +95,39 @@ word-break: break-all;
 /* Total rezultatai */
     .resultTotal{
         display: inline-block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
 
     }
-        h1{
+        .resultTotal>h4{
             display: inline-block;
-
+            width: 100%;
+        }
+        .resultTotal p{
+            display: inline-block;
+            width: 50%;
+            float: left;
+            font-size: 15px;
+            line-height: 30px;
         }
 
 /*Buttons*/
         .btn{
             display: inline-block;
+            width: calc(100% + 50px);
+            text-align: center;
         }
             .button{
                 display: inline-block;
+                float: left;
+                background-color: violet;
+                margin: 0 25px 0 25px;
+                padding: 20px 0;
+                font-size: 20px;
+                line-height: 40px;
+
+                width: calc((100% - 200px)/3);
             }
 
 
