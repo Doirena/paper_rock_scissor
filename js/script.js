@@ -24,9 +24,6 @@ function game(){
         } else {
                 return this.computerChoice = "scissors";
         };
-        
-
- 
     };
 
 
@@ -34,16 +31,18 @@ function game(){
     // choice2 is computer's choice
     
     this.compare = function(choice1, choice2){
+            return "hello";
+            
 
     };
 };
+
 for (var i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener('click', function(){
         console.log("hello");
         
                 userChoice = this.id;
                 playerChoiceDisplay.innerHTML = "player: " + userChoice;
- 
                 computerChoice = game.computerInput();
                 computerChoiceDisplay.innerHTML = "computer: " + computerChoice;
  
@@ -52,5 +51,7 @@ for (var i = 0; i < buttons.length; i++) {
                 resultDisplay.innerHTML = "Result: " + result;
         }, false);
 }
+
+
 game.computerInput();
 
