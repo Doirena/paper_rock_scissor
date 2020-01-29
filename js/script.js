@@ -15,15 +15,16 @@ var resultDisplay = document.getElementById("result"); // an element to display 
 function game(){
     this.computerInput = function(){
         this.computerChoice = Math.random();
-        console.log(this.computerChoice);
+        // console.log(this.computerChoice);
         
         if (this.computerChoice < 0.34) {
                 return this.computerChoice = "rock";
         } else if(this.computerChoice <= 0.67) {
                 return this.computerChoice = "paper";
-        } else {
+        } else {paper
                 return this.computerChoice = "scissors";
         };
+        
     };
 
 
@@ -37,15 +38,39 @@ function game(){
     };
 };
 
+
+function ChoosePic(text) {
+            const a ="<img src='./pic/scissors.png'width=\'90px\' height=\'90px\'>" ;
+            const b = "<img src='./pic/paper.png'width=\'90px\' height=\'90px\'>" ;
+            const c = "<img src='./pic/rock.png'width=\'90px\' height=\'90px\'>";
+
+            if (text === "scissors"){
+                    return a;                
+            } else if (text === "paper"){
+                    return b;
+            } else if (text === "rock"){
+                    return c;
+            }
+       
+    }
+
 for (var i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener('click', function(){
-        console.log("hello");
+    buttons[i].addEventListener('click', function(e){
+        //console.log(e) this.id tai yra is e gautas id;
+        // console.log(e);
+        // console.log(this.innerHTML);
+        // console.log(this.id);
+        
+        
         
                 userChoice = this.id;
-                playerChoiceDisplay.innerHTML = "player: " + userChoice;
-                computerChoice = game.computerInput();
-                computerChoiceDisplay.innerHTML = "computer: " + computerChoice;
- 
+                //playerChoiceDisplay.innerHTML = "player: " + userChoice;
+                playerChoiceDisplay.innerHTML = ChoosePic( userChoice);
+                computerChoice = game.computerInput();   
+                //console.log(computerChoice);    
+                // computerChoiceDisplay.innerHTML = "computer: " + computerChoice;
+                computerChoiceDisplay.innerHTML = ChoosePic(computerChoice);
+                
                 result = game.compare(userChoice, computerChoice);
  
                 resultDisplay.innerHTML = "Result: " + result;

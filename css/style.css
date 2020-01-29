@@ -16,7 +16,7 @@ word-break: break-all;
     padding: 20px;
     min-width: 100%;
     min-height: 100vh;
-    background-color: aquamarine;
+    background-color: #94CB19;
 }
 
 
@@ -35,12 +35,13 @@ word-break: break-all;
             text-transform: capitalize;
             font-size: 20px;
             line-height: 40px;
+            color: #5F6600;
 
         }
         .computer #computer_choice{
             display: inline-block;
-            background-color: aliceblue;
-            border: 4px dotted blue;
+            background-color: #94CB19;
+            border: 4px dotted #5F6600;
             box-sizing: border-box;
             width: 100px;
             height: 100px;
@@ -53,7 +54,9 @@ word-break: break-all;
         display: inline-block;
         width: 100%;
         text-align: center;
-        background-color: bisque;
+        background-color: #FAC038;
+        border-radius: 7px;
+        padding: 5px;
 
     }
         h4{
@@ -78,11 +81,12 @@ word-break: break-all;
             text-transform: capitalize;
             font-size: 20px;
             line-height: 40px;
+            color: #5F6600;
         }
         .players>#player_choice{
             display: inline-block;
-            background-color: aliceblue;
-            border: 4px dotted blue;
+            background-color: #94CB19;
+            border: 4px dotted #5F6600;
             box-sizing: border-box;
             width: 100px;
             height: 100px;
@@ -98,6 +102,7 @@ word-break: break-all;
         width: 100%;
         text-align: center;
         margin-bottom: 30px;
+        color: #4D2A0C;
 
     }
         .resultTotal>h4{
@@ -121,13 +126,25 @@ word-break: break-all;
             .button{
                 display: inline-block;
                 float: left;
-                background-color: violet;
+                background-image: linear-gradient(to bottom right,#D5D5D5,#F6F6F6);
                 margin: 0 25px 0 25px;
-                padding: 20px 0;
-                font-size: 20px;
-                line-height: 40px;
+                padding: 10px 0;
+                border-radius: 10px;
+                box-shadow: 5px 5px 3px grey;
+              
 
                 width: calc((100% - 200px)/3);
+            }
+            .button>img{
+                display: inline-block;
+                width: 10%;
+            }
+            .button>p{
+                display: inline-block;
+                font-size: 15px;
+                line-height: 30px;
+                color: #997800;
+
             }
 
 
