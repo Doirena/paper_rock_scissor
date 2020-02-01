@@ -32,8 +32,12 @@ function game(){
     // choice2 is computer's choice
     
     this.compare = function(choice1, choice2){
-            return "hello";
+            if (choice1 === choice2)
+            return "equal";
+
             
+
+
 
     };
 };
@@ -78,5 +82,5 @@ for (var i = 0; i < buttons.length; i++) {
 }
 
 
-game.computerInput();
+//      game.computerInput();
 
