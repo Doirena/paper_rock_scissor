@@ -14,6 +14,8 @@ var computerChoiceDisplay = document.getElementById("computer_choice"); // an el
 var resultDisplay = document.getElementById("result"); // an element to display the game result
 var resultComDisplay = document.getElementById("resultC"); // an element to display the game result
 var resultPlayDisplay = document.getElementById("resultP"); // an element to display the game result
+var hoveris = document.querySelector('#foo-1');
+var close = document.querySelector('.fa-times');
 
 
 
@@ -105,7 +107,18 @@ for (var i = 0; i < buttons.length; i++) {
  
                 resultDisplay.innerHTML = "Result: " + result;
                 resultComDisplay.innerHTML = "Compiuter: "+ pointCom;
-                resultPlayDisplay.innerHTML = "Player:"+ pointPlay;
+                resultPlayDisplay.innerHTML = "Player: "+ pointPlay;
+
+
+                // console.log(pointCom);
+
+        if (pointCom > 3 || pointPlay > 3 ){
+                hoveris.classList.add('show');
+        }
+
+    
+
+                
 
 
 
@@ -116,7 +129,11 @@ for (var i = 0; i < buttons.length; i++) {
                 // console.log("Com "+pointCom);
         }, false);
 }
-
+    close.addEventListener('click', function(){
+                hoveris.classList.remove('show');
+                location.reload();    
+                
+            });
 
 //      game.computerInput();
 
