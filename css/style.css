@@ -109,13 +109,16 @@ word-break: break-all;
             display: inline-block;
             width: 100%;
         }
-        .resultTotal p{
+        .resultTotal> p{
             display: inline-block;
-            width: 50%;
+            width: 15%;
             float: left;
             font-size: 15px;
             line-height: 30px;
         }
+        .resultTotal> p:nth-child(2) {
+           margin-left: calc((100% - 30%) / 2);
+          }
 
 /*Buttons*/
         .btn{
