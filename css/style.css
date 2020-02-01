@@ -186,8 +186,8 @@ word-break: break-all;
         position: absolute;
         width: 100%;
         color: white;
-        top: 50px;
-        left: 0;
+        top: 45%;
+        left: 35%;
         border: none;
     }
     .lightboxes > .lightboxes-content > i{

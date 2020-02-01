@@ -16,6 +16,7 @@ var resultComDisplay = document.getElementById("resultC"); // an element to disp
 var resultPlayDisplay = document.getElementById("resultP"); // an element to display the game result
 var hoveris = document.querySelector('#foo-1');
 var close = document.querySelector('.fa-times');
+var gameOv = document.getElementById("gOver");
 
 
 
@@ -112,16 +113,13 @@ for (var i = 0; i < buttons.length; i++) {
 
                 // console.log(pointCom);
 
-        if (pointCom > 3 || pointPlay > 3 ){
+        if (pointCom > 4 ){
                 hoveris.classList.add('show');
+                gameOv.innerHTML = "Game over! Computer is the winner: "+ pointCom;
+        }else if( pointPlay > 4){
+                hoveris.classList.add('show');
+                gameOv.innerHTML = "Game over! You are the winner: " + pointPlay;
         }
-
-    
-
-                
-
-
-
 
 
 
