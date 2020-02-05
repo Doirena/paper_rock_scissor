@@ -98,7 +98,7 @@ for (var i = 0; i < buttons.length; i++) {
         
                 userChoice = this.id;
                 //playerChoiceDisplay.innerHTML = "player: " + userChoice;
-                playerChoiceDisplay.innerHTML = ChoosePic( userChoice);
+                playerChoiceDisplay.innerHTML = ChoosePic(userChoice);
                 computerChoice = game.computerInput();   
                 //console.log(computerChoice);    
                 // computerChoiceDisplay.innerHTML = "computer: " + computerChoice;
@@ -127,11 +127,18 @@ for (var i = 0; i < buttons.length; i++) {
                 // console.log("Com "+pointCom);
         }, false);
 }
-    close.addEventListener('click', function(){
-                hoveris.classList.remove('show');
-                location.reload();    
-                
-            });
+close.addEventListener('click', function(){
+        hoveris.classList.remove('show');
+        pointCom=0;
+        pointPlay=0;
+        resultComDisplay.innerHTML = "Compiuter: "+ pointCom;
+        resultPlayDisplay.innerHTML = "Player: "+ pointPlay;
+        playerChoiceDisplay.innerHTML = " ";
+        computerChoiceDisplay.innerHTML = " ";
+        resultDisplay.innerHTML =`<h4>Choose button</h4>` ;
+
+        game=new game();
+});
 
 //      game.computerInput();
 

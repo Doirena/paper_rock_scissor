@@ -123,7 +123,7 @@ word-break: break-all;
 /*Buttons*/
         .btn{
             display: inline-block;
-            width: calc(100% + 50px);
+            width: 100%;
             text-align: center;
         }
             .button{
@@ -136,7 +136,7 @@ word-break: break-all;
                 box-shadow: 5px 5px 3px grey;
               
 
-                width: calc((100% - 200px)/3);
+                width: calc((100% - 150px)/3);
             }
             .button>img{
                 display: inline-block;
